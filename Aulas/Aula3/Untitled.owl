@@ -1,0 +1,490 @@
+@prefix : <http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula> .
+
+<http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#eFrequentadaPor
+:eFrequentadaPor rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :frequenta ;
+                 rdfs:domain :UC ;
+                 rdfs:range :Aluno .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#eLecionadaPor
+:eLecionadaPor rdf:type owl:ObjectProperty ;
+               owl:inverseOf :leciona ;
+               rdfs:domain :UC ;
+               rdfs:range :Professor .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#frequenta
+:frequenta rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#leciona
+:leciona rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#ident
+:ident rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Pessoa .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#nome
+:nome rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#Aluno
+:Aluno rdf:type owl:Class ;
+       rdfs:subClassOf :Pessoa .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#Pessoa
+:Pessoa rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#Professor
+:Professor rdf:type owl:Class ;
+           rdfs:subClassOf :Pessoa .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#UC
+:UC rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A33524
+:A33524 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A33524"^^xsd:string ;
+        :nome "Pedro Paes"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A61032
+:A61032 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A61032"^^xsd:string ;
+        :nome "Tiago Pereira"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A63129
+:A63129 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A63129"^^xsd:string ;
+        :nome "José Freitas"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A67713
+:A67713 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A67713"^^xsd:string ;
+        :nome "Manuel Moreno"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A70922
+:A70922 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A70922"^^xsd:string ;
+        :nome "Francisco Costa"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A71385
+:A71385 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A71385"^^xsd:string ;
+        :nome "Bruno Silva"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A71940
+:A71940 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A71940"^^xsd:string ;
+        :nome "Eduardo Cunha"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A72187
+:A72187 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A72187"^^xsd:string ;
+        :nome "José Lima"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A74036
+:A74036 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A74036"^^xsd:string ;
+        :nome "Manuel Monteiro"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A74264
+:A74264 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A74264"^^xsd:string ;
+        :nome "Rafael Silva"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A74568
+:A74568 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A74568"^^xsd:string ;
+        :nome "Ricardo Canela"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A74658
+:A74658 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A74658"^^xsd:string ;
+        :nome "Rui Vieira"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A75328
+:A75328 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A75328"^^xsd:string ;
+        :nome "Tiago Baptista"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A75411
+:A75411 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A75411"^^xsd:string ;
+        :nome "Ricardo Leal"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A75536
+:A75536 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A75536"^^xsd:string ;
+        :nome "Eduardo Araújo"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A75569
+:A75569 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A75569"^^xsd:string ;
+        :nome "João Leal"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A76516
+:A76516 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A76516"^^xsd:string ;
+        :nome "João Vieira"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A77045
+:A77045 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A77045"^^xsd:string ;
+        :nome "Ricardo Pereira"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A78764
+:A78764 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A78764"^^xsd:string ;
+        :nome "Ricardo Neves"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A78914
+:A78914 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A78914"^^xsd:string ;
+        :nome "Ricardo Martins"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A78997
+:A78997 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A78997"^^xsd:string ;
+        :nome "Bruno Sousa"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A79947
+:A79947 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A79947"^^xsd:string ;
+        :nome "Rui Costa"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A80424
+:A80424 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A80424"^^xsd:string ;
+        :nome "José Carvalho"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A80757
+:A80757 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A80757"^^xsd:string ;
+        :nome "Jaime Leite"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A80874
+:A80874 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A80874"^^xsd:string ;
+        :nome "João Pimentel"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A81712
+:A81712 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A81712"^^xsd:string ;
+        :nome "Ana Filipa Pereira"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A82324
+:A82324 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A82324"^^xsd:string ;
+        :nome "Carlos Barbosa"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#A82617
+:A82617 rdf:type owl:NamedIndividual ,
+                 :Aluno ;
+        :frequenta :gcs ,
+                   :prc ,
+                   :pri ,
+                   :spln ;
+        :ident "A82617"^^xsd:string ;
+        :nome "Shahzod Yusupov"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#PG17918
+:PG17918 rdf:type owl:NamedIndividual ,
+                  :Aluno ;
+         :frequenta :gcs ,
+                    :prc ,
+                    :pri ,
+                    :spln ;
+         :ident "PG17918"^^xsd:string ;
+         :nome "Paulo Martins"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#PG33874
+:PG33874 rdf:type owl:NamedIndividual ,
+                  :Aluno ;
+         :frequenta :gcs ,
+                    :prc ,
+                    :pri ,
+                    :spln ;
+         :ident "PG33874"^^xsd:string ;
+         :nome "João Grenhas"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#PG37149
+:PG37149 rdf:type owl:NamedIndividual ,
+                  :Aluno ;
+         :frequenta :gcs ,
+                    :prc ,
+                    :pri ,
+                    :spln ;
+         :ident "PG37149"^^xsd:string ;
+         :nome "Diego Silva"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#PG38415
+:PG38415 rdf:type owl:NamedIndividual ,
+                  :Aluno ;
+         :frequenta :gcs ,
+                    :prc ,
+                    :pri ,
+                    :spln ;
+         :ident "PG38415"^^xsd:string ;
+         :nome "Henrique Ribeiro"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#PG39292
+:PG39292 rdf:type owl:NamedIndividual ,
+                  :Aluno ;
+         :frequenta :gcs ,
+                    :prc ,
+                    :pri ,
+                    :spln ;
+         :ident "PG39292"^^xsd:string ;
+         :nome "Maria Pinto"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#PG41089
+:PG41089 rdf:type owl:NamedIndividual ,
+                  :Aluno ;
+         :frequenta :gcs ,
+                    :prc ,
+                    :pri ,
+                    :spln ;
+         :ident "PG41089"^^xsd:string ;
+         :nome "Miguel Dias"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#gcs
+:gcs rdf:type owl:NamedIndividual ,
+              :UC .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#jcr
+:jcr rdf:type owl:NamedIndividual ;
+     :leciona :prc ,
+              :pri ;
+     :ident "jcr"^^xsd:string ;
+     :nome "José Carlos Ramalho"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#jj
+:jj rdf:type owl:NamedIndividual ;
+    :leciona :spln ;
+    :ident "jj"^^xsd:string ;
+    :nome "José João Almeida"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#prc
+:prc rdf:type owl:NamedIndividual .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#prh
+:prh rdf:type owl:NamedIndividual ;
+     :leciona :gcs ;
+     :ident "prh"^^xsd:string ;
+     :nome "Pedro Rangel Henriques"^^xsd:string .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#pri
+:pri rdf:type owl:NamedIndividual ,
+              :UC .
+
+
+###  http://www.semanticweb.org/ricardocanela/ontologies/2020/1/salaDeAula#spln
+:spln rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

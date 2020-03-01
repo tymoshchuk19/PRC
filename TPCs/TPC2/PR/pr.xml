@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <keyname>PRI-2019-Teste</keyname>
+        <title>Teste</title>
+        <subtitle>Teste de PRI</subtitle>
+        <bdate>13-1-2019</bdate>
+        <edate>13-1-2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <homepage>http://www.di.uminho.pt/~jcr</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A74568</identifier>
+            <name>Ricardo Canela</name>
+            <email>ricardocanela.ns@gmail.com</email>
+        </member>
+    </workteam>
+    <abstract>
+        <p>
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="comandos.txt">Project Record</deliverable>
+    </deliverables>
+</pr>

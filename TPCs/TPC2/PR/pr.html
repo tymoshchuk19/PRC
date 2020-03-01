@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+   <head>
+      <title>Project Record</title>
+      <meta charset="UTF-8"></meta>
+   </head>
+   <body>
+      <h1>Project Record</h1>
+      <hr></hr>
+      <table>
+         <tr>
+            <td>
+               <p>
+                  <b>KEY NAME: </b>PRC-2020-TPC2
+               </p>
+               <p>
+                  <b>TITLE: </b>TPC aula 2
+               </p>
+               <p>
+                  <b>SUBTITLE: </b>Ontologia do arquivo sonoro e respetivo povoamento
+               </p>
+            </td>
+            <td>
+               <p>
+                  <b>BEGIN DATE: </b>10-02-2020
+               </p>
+               <p>
+                  <b>END DATE: </b>17-02-2020
+               </p>
+               <p>
+                  <b>SUPERVISOR: </b>
+                  José Carlos Ramalho
+                  http://www.di.uminho.pt/~jcr
+                  
+               </p>
+            </td>
+         </tr>
+      </table>
+      <hr></hr>
+      <hr></hr>
+      <h3>Work Team</h3>
+      <ol>
+         <li>
+            <p>
+               <b>Identifier: </b>A74568
+               <b>    Name: </b>Ricardo Canela
+               <b>    Email: </b>ricardocanela.ns@gmail.com
+            </p>
+         </li>
+      </ol>
+      <hr></hr>
+      <hr></hr>
+      <h3>Abstract</h3>
+      <p>
+         A ontologia especificada, arquivo sonoro, contem três Classes: obra, partitura e instrumento. São tb definidos os seus atributos,
+         o tipo é partilhado pela obra e pela partitura. As relações especificadas relacionam bidirecionalmente a obra com os seus instrumentos e estes estão 
+         relacionados com as suas partituras também de forma bidirecional, ou seja, uma obra tem partitura para um instrumento e um instrumento é de uma obra,
+         da mesma forma um instrumento tem partitura e essa partitura é de um instrumento.
+      </p>
+      <p>
+         Depois, foi necessário efetuar a conversão do ficheiro XML para RDF neste caso utilizei um ficheiro XSL para criar o povoamento do
+         ficheiro TTL gerado no protégé.
+      </p>
+      <p>
+         A fase final, consistiu no carregamento do ficheiro RDF para o GraphDB e efetuar algumas consulta dos dados carregados.
+      </p>
+      <hr></hr>
+      <hr></hr>
+      <h3>Deliverables</h3>
+      <ul>
+         <li>
+            <a href="./">Project Record</a>
+         </li>
+         <li>
+            <a href="../arquivoSonor.ttl">RDF arquivo sonoro</a>
+         </li>
+         <li>
+            <a href="../arquivoSonor.xml">XML arquivo sonoro</a>
+         </li>
+         <li>
+            <a href="../arquivoSonoro.xsl">XSL arquivo sonoro</a>
+         </li>
+         <li>
+            <a href="../SPARQL.txt">Queries arquivo sonoro</a>
+         </li>
+      </ul>
+      <hr></hr>
+   </body>
+</html>

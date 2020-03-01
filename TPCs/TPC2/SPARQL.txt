@@ -1,0 +1,26 @@
+1 - Obras e respetivas informações:
+
+SELECT ?obra ?titulo ?tipo ?compositor {
+    ?obra a :obra.
+    ?obra :titulo ?titulo.
+    ?obra :tipo ?tipo.
+    ?obra :compositor ?compositor.
+}
+
+2 - Titulo das obras com partitura para Fagote:
+
+SELECT ?titulo {
+    ?obra a :obra.
+    ?obra :titulo ?titulo.
+    ?obra :temPartituraPara ?instrumento.
+    ?instrumento :designacao "Fagote"
+}
+
+3 - Nome dos instrumentos com afinacao em Fá:
+
+SELECT ?designacao {
+    ?instrumento a :instrumento.
+    ?instrumento :tem ?partitura.
+    ?partitura :afinacao "Fá".
+    ?instrumento :designacao ?designacao.
+}
